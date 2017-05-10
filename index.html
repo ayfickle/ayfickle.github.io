@@ -1,12 +1,42 @@
 ---
-layout: default 　　
-title: 我的Blog 　
+title: blog_index
+theme :
+   name : ayfickle
 ---
+{% include JB/setup %}
 
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-    {% for post in site.posts %}
-    	<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>blog</title>
+    <meta name="description" content="">
+    <meta name="author" content="ayfickle">
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <!-- Le styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/index.css?body=1" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div class="col-md-12">
+        <div class="col-md-12 name">
+            blog
+        </div>
+        <div class="col-md-12 category_wrap">
+            <ul class="nav center-block flex mul-line flex_center">
+                {% assign pages_list = site.pages %} {% assign group = 'navigation' %} {% include JB/pages_list %}
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+

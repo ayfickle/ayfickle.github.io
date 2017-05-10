@@ -29,6 +29,9 @@ a blog with jekyll
 	- gem install jekyll
 
 - open jekyll file and run `jekyll server`
+	
+	> clone jekyll-bootstrap 
+	gems: ["jekyll-sitemap"] and Gemfile -> ruby
 
 - add new dairy file
 	- gem install rake
