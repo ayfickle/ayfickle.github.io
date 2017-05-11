@@ -5,7 +5,9 @@ description: ""
 category: 
 tags: []
 ---
-{% include JB/setup %}
+
+进到安装devkit目录，执行init，会生成config.yml
+
 
 ### ayfickle.github.io
 a blog with jekyll
