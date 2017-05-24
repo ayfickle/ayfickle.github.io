@@ -2,8 +2,8 @@
 layout: post
 title: "init local jekyll"
 description: ""
-category: 
-tags: []
+category: blog
+tags: [jekyll, modal, blog]
 ---
 
 进到安装devkit目录，执行init，会生成config.yml

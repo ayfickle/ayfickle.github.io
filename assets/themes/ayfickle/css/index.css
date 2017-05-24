@@ -1,105 +1,113 @@
-body {
+html, body {
+    min-height: 100%;
+    background: #eee;
     color: #bbb;
     font-size: 18px;
     font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    background-color: #fff;
+    /*background: url('../imgs/home/ayfickle.jpg') no-repeat;
+    background-size: 100% 100%;
+    background-position: center;*/
 }
 
-.nav li {
-    width: 130px;
-    height: 130px;
+.container {
+    margin-top: 20px;
+}
+
+.ay-container {
+
+}
+
+.ay-container p {
+    text-align: center;
+    color: #AFB5B3;
+    font-size: 3em;
+    -webkit-animation: Glow 1.5s ease infinite alternate;
+    animation: Glow 1.5s ease infinite alternate;
+    transition: all 1.5s ease;
+}
+
+.ay-img {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.ay-img img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+}
+
+.ay-nav {
+    position: relative;
+}
+
+.ay-nav ul li {
+    position: absolute;
+    font-size: 40px;
+}
+
+.ay-nav ul li:first-child {
+    top: 100px;
+    left: 50%;
+    margin-left: -33px;
+    transform: rotate(-20deg);
+}
+
+.ay-nav ul li:nth-child(2) {
+    top: 50px;
+    left: 10%;
+    margin-left: -33px;
+    transform: rotate(60deg);
+}
+
+.ay-nav ul li:last-child {
+    top: 50px;
+    left: 90%;
+    margin-left: -33px;
+    transform: rotate(-60deg);
+}
+
+.ay-nav ul li a:hover {
+    -webkit-animation: Glow 1.5s ease infinite alternate;
+    animation: Glow 1.5s ease infinite alternate;
+    transition: all 1.5s ease;
+    color: #AFB5B3;
+}
+
+.ay-moto p {
+    margin: 10px;
     text-align: center;
-    box-shadow: inset 0px 0px 50px 10px rgba(255, 255, 255, 0.67);
 }
 
-.name {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    color: #666;
+.ay-info{
+    width: 60%;
+    height: 300px;
+    background: url(../imgs/home/tree.jpg);
+    border: 1px solid #afb5b3;
+    position: absolute;
+    margin: 150px auto 20px;
+    left: 50%;
+    margin-left: -30%;
+}
+.ay-info .transbox{
+    width: 80%;
+    height: 240px;
+    margin: 30px 10%;
+    background-color: #fff;
+    border: 1px solid #afb5b3;
+    filter: alpha(opcity=60);
+    opacity: 0.6;
+}
+.ay-info .transbox p{
+    margin: 20px 30px;
+    font-size: 13px;
+    color: #000;
 }
 
-.category_wrap {
-    height: 180px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.nav li {
-    /*float: left;*/
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-block
-}
-
-.nav li:before {
-    box-shadow: inset 0px 0px 50px 10px rgba(255, 255, 255, 0.2);
-}
-
-.nav li:nth-child(1) {
-    background-color: rgba(34, 34, 34, 0.89);
-    /*#222222*/
-}
-
-.nav li:nth-child(2) {
-    background-color: rgba(102, 255, 255, 0.79);
-    /*#CCFFCC*/
-}
-
-.nav li:nth-child(3) {
-    background-color: rgba(102, 204, 102, 0.8);
-    /*#CCFFFF*/
-}
-
-.nav li:nth-child(4) {
-    background-color: rgba(204, 204, 255, 0.87);
-    /*#CCCCFF*/
-}
-
-.nav li:nth-child(5) {
-    background-color: rgba(255, 204, 255, 0.82);
-    /*#CCCCFF*/
-}
-
-.nav li a {
-    color: #fff;
-    height: 130px;
-    line-height: 130px;
-    padding: 0px;
-    font-size: 25px;
-    text-decoration: none;
-    display: block;
-}
-
-@media (min-width: 960px) {
-    .nav li:hover,
-    .nav li:focus {
-        margin-top: -2px;
-        height: 150px;
-        width: 150px;
-        margin-left: 2px;
-        margin-right: 2px;
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        transition: all .3s ease;
-    }
-    .nav li:focus a,
-    .nav li:hover a {
-        color: #FF9900;
-        height: 150px;
-        line-height: 150px;
-        padding: 0px;
-        font-size: 30px;
-        background-color: transparent;
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        transition: all .3s ease;
-    }
+.ay-info .transbox p:last-child{
+    position: absolute;
+    bottom: 35px;
+    margin: 0;
+    right: 11%;
+    color: #8dcfbb;
 }
