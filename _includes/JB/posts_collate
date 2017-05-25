@@ -38,7 +38,7 @@ Usage:
         </div>
         <div class="ay-href-right">
           <div class="ay-page-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></div>
-          <article><a href="{{ BASE_PATH }}{{ post.url }}"></a>{{ post.excerpt | strip_html }}</article>
+          <article><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.excerpt | strip_html }}</a></article>
         </div>
       </div>
   
