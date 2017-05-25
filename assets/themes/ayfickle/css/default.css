@@ -123,11 +123,6 @@ a:hover, .ay-href a:hover {
     width: calc(100% - 50px);
 }
 
-.ay-href-right article {
-    max-height: 63px;
-    overflow: hidden;
-}
-
 .ay-href .ay-page-title a {
     font-size: 18px;
 }
