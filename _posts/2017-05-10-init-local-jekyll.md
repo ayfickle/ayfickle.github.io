@@ -6,7 +6,7 @@ category: blog
 tags: [jekyll, blog, DIY]
 ---
 
-倒腾了个github上的blog。然后顺手配了下windows的本地jekyll环境，碰到一些坑，写出来共享下。
+#倒腾了个github上的blog。然后顺手配了下windows的本地jekyll环境，碰到一些坑，写出来共享下。
 
 ### create a github blog
 在github上创建博客，有两种形式。
