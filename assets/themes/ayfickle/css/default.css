@@ -198,6 +198,7 @@ a:hover, .ay-href a:hover {
     padding: 0 25px;
     font-size: 16px;
     line-height: 1.6;
+    word-wrap: break-word;
 }
 
 .ay-content h3 {
@@ -243,6 +244,7 @@ a:hover, .ay-href a:hover {
     display: block;
     background-color: #fff;
     padding-left: 0;
+    white-space: inherit;
 }
 
 .ay-content li img {
