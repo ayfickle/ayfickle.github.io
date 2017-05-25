@@ -248,6 +248,7 @@ a:hover, .ay-href a:hover {
 .ay-content li img {
     max-height: 300px;
     margin-left: 20px;
+    max-width: 100%;
 }
 
 .ay-content blockquote {
