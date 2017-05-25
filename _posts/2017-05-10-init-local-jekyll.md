@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "倒腾jekyll+github做个简单的博客"
+title: "倒腾jekyll+github的博客"
 description: "init local jekyll"
 category: blog
 tags: [jekyll, blog, DIY]
