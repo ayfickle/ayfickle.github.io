@@ -135,10 +135,8 @@ a:hover, .ay-href a:hover {
 .ay-tag div {
     display: inline-block;
     vertical-align: middle;
-
-}
-
-.ay-tag a {
+    display: inline-block;
+    vertical-align: middle;
     padding: 8px 15px;
     margin: 2px;
     background: #eee;
@@ -146,6 +144,10 @@ a:hover, .ay-href a:hover {
     border-radius: 3px;
     text-decoration: none;
     border: 1px dashed #cccccc;
+}
+
+.ay-tag a {
+    text-decoration: none;
 }
 
 .ay-tag a span {
