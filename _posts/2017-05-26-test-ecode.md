@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "test ecode"
-description: ""
+title: "hello world"
+description: "just a test"
 category: test
-tags: [test, encode]
+tags: [test, blog]
 ---
 
 # hello
@@ -12,6 +12,6 @@ if I can succeed ?
 
 # world
 
-I love...rt
+I love...
 
-so what's wrong with this encode?
+so, what about this one?
