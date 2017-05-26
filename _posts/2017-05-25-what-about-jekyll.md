@@ -1,17 +1,15 @@
 ---
 layout: post
-title: "hello world"
+title: "jekyll test encode"
 description: "just a test"
 category: test
 tags: [test, blog]
 ---
 
-# hello test
+# jekyll test encode
 
 if I can succeed ?
 
 # world
 
 I love...
-
-so, what about this one?
