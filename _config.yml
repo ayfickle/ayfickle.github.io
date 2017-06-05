@@ -3,12 +3,15 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: rouge
 
-markdown: kramdown
+markdown: kramdown 
 
 kramdown:
-  input: GFM
+  input: GFM 
+
+highlighter: rouge
+
+
 
 excerpt_separator: "\n\n"
 

@@ -18,7 +18,7 @@ tags: [codewars, javascript]
 
 然后宝宝写了个for循环这样写的：
 
-```
+```javascript
 if(arr[i] + arr[i+1] + arr[i+2] == 'fickle') {
 	result.push('&')
 }
