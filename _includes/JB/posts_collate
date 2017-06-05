@@ -46,15 +46,15 @@ Usage:
       </div>
     {% else %}
       {% if this_year != next_year %}
-        </ul>
+        </div>
         <h2>{{next_year}}</h2>
         <h3>{{next_month}}</h3>
-        <ul>
+        <div>
       {% else %}    
         {% if this_month != next_month %}
-          </ul>
+          </div>
           <h3>{{next_month}}</h3>
-          <ul>
+          <div class="row no-margin margin-left">
         {% endif %}
       {% endif %}
     {% endif %}
