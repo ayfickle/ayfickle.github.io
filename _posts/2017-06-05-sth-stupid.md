@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "codewars怀疑智商之路"
+title: "codewars怀疑智商之路-入门级"
 description: "some stupid moment"
 category: code
 tags: [codewars, javascript]
@@ -34,4 +34,32 @@ return arr.replace(/&+/g, ' ').trim();
 return str.replace(/(fickle)+/g, ' ').trim();
 ```
 
-### 待续...
+### first word to uppercase
+
+给定字符串，然后把每个单词的首字母全部大写...
+
+两种比较好的解决方法：
+
+- 通过map遍历 
+
+	```
+	String.prototype.toJadenCase = function () { 
+		return this.split(" ").map(function(word){
+			return word.charAt(0).toUpperCase() + word.slice(1);
+		}).join(" ");
+	}
+	```
+
+- 正则 --- 正则大法好
+
+	```
+	String.prototype.toJadenCase = function () {
+	  	return this.replace(/(^|\s)[a-z]/g, function(x){ return x.toUpperCase(); });
+	};
+	```
+
+### 中场休息
+
+呐呐，做这种东西，莫过于一两分钟后看到这种结果啦。
+
+![success](https://ayfickle.github.io/assets/themes/ayfickle/imgs/codewars/success.png)

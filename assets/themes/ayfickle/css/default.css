@@ -247,10 +247,15 @@ a:hover, .ay-href a:hover {
     white-space: inherit;
 }
 
-.ay-content li img {
+/*.ay-content p {
+    text-align: center;
+}*/
+
+.ay-content p img {
     max-height: 300px;
-    margin-left: 20px;
+    margin-left: 10%;
     max-width: 100%;
+
 }
 
 .ay-content blockquote {

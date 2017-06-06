@@ -61,11 +61,13 @@ tags: [jekyll, blog, DIY]
 	- gem install rake 这个主要是git bash没有rake命令，需要安装。
 	- 在_config.yml 添加配置 permalink: /:categories/:year/:month/:day/:title 
 	- 新增 Rakefile 配置项参考[这里](https://github.com/ayfickle/ayfickle.github.io/blob/master/Rakefile)
+
 	![Rakefile](https://ayfickle.github.io/assets/themes/ayfickle/imgs/init/step1.png)
 	> Rakefile 不可少
 	如果是在windows的控制台，直接rake post会创建，但是加上title参数则报错，又跟ruby有关，被跳过。
 
 	- 运行 rake post title="init local jekyll"
+
 	![create new](https://ayfickle.github.io/assets/themes/ayfickle/imgs/init/step3.png)
 
   到这里，已经初始化成功了，肯定是没有什么问题了吧。很好，下面就是自己设计blog的样式了。但是本宝宝审美设计方面弱到爆，只能丑丑的摆在那，将就将就看着。
@@ -87,6 +89,7 @@ tags: [jekyll, blog, DIY]
 ##### 头信息
 
 rake post自动生成头信息
+
 ![title config](https://ayfickle.github.io/assets/themes/ayfickle/imgs/init/step2.png)
 - layout 是 当前页面引用的布局文件
 - category 类别
