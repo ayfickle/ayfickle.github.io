@@ -7,11 +7,11 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 markdown: kramdown 
 
 kramdown:
-  input: GFM 
+ input: GFM 
 
 highlighter: rouge
 
-
+port: 4000
 
 excerpt_separator: "\n\n"
 

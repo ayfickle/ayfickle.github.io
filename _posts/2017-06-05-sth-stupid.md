@@ -62,11 +62,11 @@ return str.replace(/(fickle)+/g, ' ').trim();
 
 呐呐，做这种东西，莫过于一两分钟后看到这种结果啦。
 
-![success](https://ayfickle.github.io/assets/themes/ayfickle/imgs/codewars/success.png)
+![success]({{ site.url }}/assets/imgs/codewars/success.png)
 
 但是！随之而来的就是深深地嫌弃和打击，不过还好，对基础的长进还是很有帮助的。
 
-![success](https://ayfickle.github.io/assets/themes/ayfickle/imgs/codewars/compare.png)
+![success]({{ site.url }}/assets/imgs/codewars/compare.png)
 
 ### some tips
 
