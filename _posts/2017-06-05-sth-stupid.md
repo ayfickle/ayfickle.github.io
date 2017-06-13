@@ -30,7 +30,7 @@ return arr.replace(/&+/g, ' ').trim();
 
 嗷~~不要问我为什么这么蠢。非要把 'fickle' 换成 & ，不能让人家默默的保持原来的样子？所以，其实一句话就好：
 
-```
+```javascript
 return str.replace(/(fickle)+/g, ' ').trim();
 ```
 
@@ -42,7 +42,7 @@ return str.replace(/(fickle)+/g, ' ').trim();
 
 - 通过map遍历 
 
-	```
+	```javascript
 	String.prototype.toJadenCase = function () { 
 		return this.split(" ").map(function(word){
 			return word.charAt(0).toUpperCase() + word.slice(1);
@@ -52,7 +52,7 @@ return str.replace(/(fickle)+/g, ' ').trim();
 
 - 正则 --- 正则大法好
 
-	```
+	```javascript
 	String.prototype.toJadenCase = function () {
 	  	return this.replace(/(^|\s)[a-z]/g, function(x){ return x.toUpperCase(); });
 	};
@@ -74,8 +74,9 @@ return str.replace(/(fickle)+/g, ' ').trim();
 if(a === b) return true|false;
 eqals to
 return a === b;
-it's embarrassing, right ?
 {% endhighlight %}
+
+it's embarrassing, right ?
 
 `这是一些有关思路和实现的吐槽`
 
@@ -83,7 +84,7 @@ it's embarrassing, right ?
 
   小六琢磨一番后，思路是这样的：用一个result数组存放不能被抵消的方向元素，用result的最后一个元素去比对。然后，实现如下：
 
-  ```
+  ```javascript 
   function dirReduc(plan) {
   var opposite = {
     'NORTH': 'SOUTH', 'EAST': 'WEST', 'SOUTH': 'NORTH', 'WEST': 'EAST'};
@@ -113,7 +114,7 @@ it's embarrassing, right ?
 
   那么，作为对象有个很好的for...in循环、此处in则是对象里每个元素的key值，真的很棒。
 
-  ```
+  ```javascript
   function cakes(recipe, available) {
 	  var numCakes = [];
 	  for(var key in recipe){

@@ -28,3 +28,29 @@ JB应该是内部把这个去掉了，如果引入JB的setup，那么不管怎�
 
 哦，这个问题我也还是懵逼的，没有找到好的方法，按照官方的写法，代码不能高亮但是可以显示行号。后续看看之后再做补充。
 
+嗷，上午刚说，现在我就知道了，果然只有在东西可能会被别人看到的情况下的驱动力会大一些。代码高亮有两种写法：
+
+- 一般的 Markdown 语法
+
+  `` ` language
+
+  	code here
+
+  `` `
+
+- jekyll Liquid模板格式
+
+  { % highlight javascript % }
+
+  	code here
+
+  { % endhighlight % }
+
+有两个需要注意的地方：
+
+- _config.yml中需要配置 highlighter: rouge
+
+- 需要代码高亮的css，推荐[syntax.css](https://github.com/mojombo/tpw/blob/master/css/syntax.css)
+
+基于这些配置，常见的代码高亮是完全可以支持的了，非常的nice。
+
