@@ -70,12 +70,12 @@ return str.replace(/(fickle)+/g, ' ').trim();
 
 ### some tips
 
-```
+{% highlight javascript linenos %}
 if(a === b) return true|false;
 eqals to
 return a === b;
 it's embarrassing, right ?
-```
+{% endhighlight %}
 
 `这是一些有关思路和实现的吐槽`
 
