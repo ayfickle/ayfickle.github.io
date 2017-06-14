@@ -52,5 +52,13 @@ JB应该是内部把这个去掉了，如果引入JB的setup，那么不管怎�
 
 - 需要代码高亮的css，推荐[syntax.css](https://github.com/mojombo/tpw/blob/master/css/syntax.css)
 
+然后，上面两种高亮写法，不同的一点是，Liquid模板格式支持显示代码行号的参数：linenos。
+哈哈，而且很友善的是，行号的样式还可以自己设置，在highlight.css加入.lineno样式。准确的说是，页面中任何显示的样式你都可以自己通过css来控制。
+
 基于这些配置，常见的代码高亮是完全可以支持的了，非常的nice。
 
+### others
+
+[链接到某篇文章]({{site.url}}{% post_url 2017-05-10-init-local-jekyll %}) ： ({ {site.url} }{ % post_url 2017-05-10-init-local-jekyll % })
+
+{ {、{ % 都是没有空格的，没有空格会自动解析。等到空闲，我把这些都用图片来代替。
