@@ -36,3 +36,5 @@ tags: [tool, git, workflow]
 
 现在我加了一个功能分支。feature----develop
 
+现在增加一个发布分支。  release----develop
+
