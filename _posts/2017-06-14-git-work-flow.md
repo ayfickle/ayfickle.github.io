@@ -38,3 +38,4 @@ tags: [tool, git, workflow]
 
 现在增加一个发布分支。  release----develop
 
+现在增加一个bug分支。   fix----master
