@@ -26,3 +26,6 @@ tags: [tool, git, workflow]
 
   嗷，这个命令是极好的。可以查看你的整个git network flow，非常的棒。
 
+- 增删改查git库
+
+  git remote -v
