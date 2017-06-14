@@ -32,3 +32,9 @@ tags: [tool, git, workflow]
 
 看了许多分支管理介绍，但是我还是没有一个很明确的方案来解决开发完成代码合并但是不上线的问题~！
 
+哈哈，我就是来做实验完成git官方的work flow的。
+
+现在我加了一个功能分支。feature----develop
+
+现在增加一个发布分支。  release----develop
+
