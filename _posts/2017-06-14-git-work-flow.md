@@ -1,0 +1,64 @@
+---
+layout: post
+title: "关于git使用的思考"
+description: "some tips about git"
+category: tools
+tags: [tool, git, workflow]
+---
+
+
+
+### 关于图片路径
+
+鉴于之前没有看api，于是我在博文里加图片路径是绝对路径，例如：https://ayfickle.github.io/assest/themes... 这类的或者{{ ASSET_PATH }}/imgs/home/favicon.ico 之类的。JB里面的{{ ASSET_PATH }}是到assests/themes/ayfickle里面下的。
+
+这样看下来确是不太优雅的，毕竟assests目录下有个imgs的文件夹存放图片就够了，放在主题下未免过深了。所以就去翻了jekyll的api，然后看到了有介绍：
+
+`{ { site.url } }` 这个东东就用来定义根目录的，任何地方都可以放心的使用，这样一来就没有深层次的嵌套，感觉上还是不错的。于是我的路径都变成这样的了：{{ site.url }}/assets/imgs/codewars/compare.png 看起来是简洁了不少是吧。
+
+哈哈，记得写的时候{{ }}括弧之间是木有空格的，我仅仅是为了显示才多了一个空格，不然会自动解释成当前的根目录。
+
+### 关于目录显示文章简介
+
+JB应该是内部把这个去掉了，如果引入JB的setup，那么不管怎么设置都是不会出现简述的。去掉之后，在 `_config.yml` 设置 `excerpt_separator: "\n\n"` 这个解释器，然后在文章 title 后加 `{ { post.excerpt | strip_html } }` 这样就可以的。
+
+至此，基本上就完美的有了想展示在博客上的基本元素。
+
+### 关于代码高亮
+
+哦，这个问题我也还是懵逼的，没有找到好的方法，按照官方的写法，代码不能高亮但是可以显示行号。后续看看之后再做补充。
+
+嗷，上午刚说，现在我就知道了，果然只有在东西可能会被别人看到的情况下的驱动力会大一些。代码高亮有两种写法：
+
+- 一般的 Markdown 语法
+
+  `` ` language
+
+  	code here
+
+  `` `
+
+- jekyll Liquid模板格式
+
+  { % highlight javascript % }
+
+  	code here
+
+  { % endhighlight % }
+
+有两个需要注意的地方：
+
+- _config.yml中需要配置 highlighter: rouge
+
+- 需要代码高亮的css，推荐[syntax.css](https://github.com/mojombo/tpw/blob/master/css/syntax.css)
+
+然后，上面两种高亮写法，不同的一点是，Liquid模板格式支持显示代码行号的参数：linenos。
+哈哈，而且很友善的是，行号的样式还可以自己设置，在highlight.css加入.lineno样式。准确的说是，页面中任何显示的样式你都可以自己通过css来控制。
+
+基于这些配置，常见的代码高亮是完全可以支持的了，非常的nice。
+
+### others
+
+[链接到某篇文章]({{site.url}}{% post_url 2017-05-10-init-local-jekyll %}) ： ({ {site.url} }{ % post_url 2017-05-10-init-local-jekyll % })
+
+{ {、{ % 都是没有空格的，没有空格会自动解析。等到空闲，我把这些都用图片来代替。
