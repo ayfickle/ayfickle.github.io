@@ -116,3 +116,48 @@ class App extends Component {
 
 > tips：额，关于函数调用，是需要手动绑定this的。
   `setInterval(() => this.clock(), 1000)` 等同于 `setInterval(this.clock.bind(this), 1000)`
+
+绑定的几种写法（以上面的clock函数为例）：
+
+- 构造函数中指定：
+
+```
+class App extends Component {
+  constructor(props) {
+    ...
+    this.clock = this.clock.bind(this);
+  }
+  componentDidMount() {
+    setInterval(this.clock, 1000);
+  }
+  ...
+}
+```
+
+- 箭头函数绑定this：
+
+```
+class App extends Component {
+  constructor(props) {
+    ...
+  }
+  componentDidMount() {
+    setInterval(() => this.clock(), 1000);
+  }
+  ...
+}
+```
+
+- 调用时绑定this：
+
+```
+class App extends Component {
+  constructor(props) {
+    ...
+  }
+  componentDidMount() {
+    setInterval(this.clock.bind(this), 1000);
+  }
+  ...
+}
+``` 
