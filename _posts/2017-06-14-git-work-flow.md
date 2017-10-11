@@ -91,3 +91,10 @@ tags: [tool, git, workflow]
 
   git push --set-upstream origin remote_branch
 
+### 补充
+
+- 面试问题1
+
+Q：直接在主支上开发后，pull远程代码发现冲突怎么办？
+
+A：这时候出现冲突是拉不下来远程代码的。先用`git stash`命令将本地修改放到缓存，拉下远程代码后，`git stash pop`比较冲突代码，修正后再提交。
