@@ -84,7 +84,7 @@ var App = React.createClass({
 
 - 计时器
 
-主要是要明白计时器触发条件是在页面渲染之后，也就是`componentDidMount`状态函数是更新state。
+主要是要明白计时器触发条件是在页面渲染之后，也就是生命周期中`componentDidMount`钩子函数是更新state。
 
 ```
 class App extends Component {
